@@ -1,0 +1,15 @@
+# Tạo một mảng kép ban đầu
+array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+# In mảng kép ban đầu
+print("Mảng kép ban đầu:")
+for row in array:
+    print(row)
+
+# Thay đổi một phần tử trong mảng kép
+array[0][0] = 99
+
+# In mảng kép sau khi thay đổi
+print("\nMảng kép sau khi thay đổi:")
+for row in array:
+    print(row)
