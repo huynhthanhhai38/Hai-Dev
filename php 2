@@ -1,0 +1,31 @@
+<?php
+
+// Tạo một mảng kép ban đầu
+$array = array(
+    array(1, 2, 3),
+    array(4, 5, 6),
+    array(7, 8, 9)
+);
+
+// In mảng kép ban đầu
+echo "Mảng kép ban đầu:<br>";
+for ($i = 0; $i < count($array); $i++) {
+    for ($j = 0; $j < count($array[$i]); $j++) {
+        echo $array[$i][$j] . " ";
+    }
+    echo "<br>";
+}
+
+// Thay đổi một phần tử trong mảng kép
+$array[0][0] = 99;
+
+// In mảng kép sau khi thay đổi
+echo "<br>Mảng kép sau khi thay đổi:<br>";
+for ($i = 0; $i < count($array); $i++) {
+    for ($j = 0; $j < count($array[$i]); $j++) {
+        echo $array[$i][$j] . " ";
+    }
+    echo "<br>";
+}
+
+?>
